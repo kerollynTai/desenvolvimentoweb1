@@ -18,3 +18,4 @@ CREATE TABLE disciplinas(
 );
 
 SELECT * FROM disciplinas;
+
