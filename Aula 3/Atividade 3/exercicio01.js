@@ -6,7 +6,7 @@ const conexao = mysql.createConnection({
     host: "localhost",
     user: "root",
     password: "root",
-    database: "escola"
+    database: "escola2"
 });
 
 function cadastrarAluno(){
@@ -47,11 +47,7 @@ function listarAlunos(){
                 console.log(
                     Aluno.id," - ",
                     Aluno.nome," - ",
-                    Aluno.email, " - ",
-                    Aluno.endereco, " - ",
-                    Aluno.matricula," - ",
-                    Aluno.curso," - ",
-                    Aluno.serie," - "
+                    Aluno.email
                 );
             });
         }
@@ -64,7 +60,7 @@ function listarAlunos(){
 function excluirAluno(){
 
     const id = readline.questionInt("Digite o ID do aluno: ");
-    const deletar = "DELET FROM Alunos WHERE id = ?";
+    const deletar = "DELETE FROM Alunos WHERE id = ?";
 
     conexao.query(deletar,[id], function(erro, resultado){
 
