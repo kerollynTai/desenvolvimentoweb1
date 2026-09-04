@@ -60,20 +60,41 @@ function listarAlunos(){
 function excluirAluno(){
 
     const id = readline.questionInt("Digite o ID do aluno: ");
-    const deletar = "DELETE FROM Alunos WHERE id = ?";
+    const sql = "SELECT * FROM Alunos WHERE id = ?";
 
-    conexao.query(deletar,[id], function(erro, resultado){
+    conexao.query(sql, [id], function (erro,resultados){
 
-        if(erro){
-            console.log("Erro ao excluir aluno!");
-        } else if( resultado.affectedRows === 0 ){
-            console.log("Aluno não encontrado!");
-        } else {
-            console.log("Aluno excluido com sucesso!");
+        const aluno = resultados[0];
+        console.log("\Aluno encontrado:",
+            "\nNome: ",aluno.nome,
+            "\nEmail: ", aluno.email
+        );
+
+        const validar = readline.question("\nDeseja excluir? (S/N): ");
+        
+        if(validar ==="s" || validar === "S"){
+            const deletar = "DELETE FROM Alunos WHERE id = ?";
+
+            conexao.query(deletar,[id], function(erro, resultado){
+
+                if(erro){
+                    console.log("Erro ao excluir aluno!");
+                } else if( resultado.affectedRows === 0 ){
+                    console.log("Aluno não encontrado!");
+                } else {
+                    console.log("Aluno excluido com sucesso!");
+                }
+
+                menu();
+            });
+
+        } else if(validar ==="n" || validar ==="N"){
+            console.log("Aluno não excluído!");
+            menu();
+        } else{
+            console.log("Opção inválida!");
+            menu();
         }
-
-        menu();
-
     });
 }
 
