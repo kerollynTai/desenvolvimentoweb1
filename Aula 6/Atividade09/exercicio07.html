@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanchonete - pedido</title>
+</head>
+    <body>
+        <form method="post" action="" onsubmit="alert('Pedido registrado com sucesso!')">
+
+            <h2>Bem-vindo(a) ao sistema da nossa lanchonete!</h2>
+            <p>Responda os campos a seguir para enviar seu pedido:</p>
+            <br>
+            <p>Informe seu nome:</p>
+            <input type="text" name="nome" placeholder="Digite o nome aqui:" required>
+            <p>Informe seu email:</p>
+            <input type="email" name="email" placeholder="Digite o email aqui:" >
+            <br>
+            <br>
+
+            <p>Informe o tipo de pedido:</p>
+            <input type="radio"
+                    id="consumir-local"
+                    value="consumir-local"
+                    name="tipo-pedido"
+                    required
+            >
+            <label for="consumir-local">Consumir no local</label>
+            <br>
+            <input type="radio"
+                    id="retirada"
+                    value="retirada"
+                    name="tipo-pedido"
+                    required
+            >
+            <label for="retirada">Retirada</label>
+            <br>
+            <input type="radio"
+                    id="entrega"
+                    value="entrega"
+                    name="tipo-pedido"
+                    required
+            >
+            <label for="entrega">Entrega</label>
+            <br>
+            <br>
+
+            <p>Quais produtos deseja solicitar?</p>
+            <input type="checkbox" name="item1" value="hamburguer" >
+            <input type="number" nome="qndHamburguer" min="1" max="15" >
+            <label>Hambúrguer</label> 
+            <br>
+            <input type="checkbox" name="item2" value="cachorro-quente" >
+            <input type="number" nome="qndCachorro-quente" min="1" max="15" >
+            <label>Cachorro-quente</label>
+            <br>
+            <input type="checkbox" name="item3" value="pizza" >
+            <input type="number" nome="qndPizza" min="1" max="15" >
+            <label>Pizza</label>
+            <br>
+            <input type="checkbox" name="item4" value="batata-frita" >
+            <input type="number" nome="qndBatata-frita" min="1" max="15" >
+            <label>Batata frita</label>
+            <br>
+            <input type="checkbox" name="item4" value="refrigerante" >
+            <input type="number" nome="qndRefrigerante" min="1" max="15" >
+            <label>Refrigerante</label>
+            <br>
+            <input type="checkbox" name="item4" value="suco" >
+            <input type="number" nome="qndSuco" min="1" max="15" >
+            <label>Suco</label>
+            <br>
+            <br>
+
+            <p>Data e horário do pedido:</p>
+            <input type="datetime-local" name="data-pedido">
+            <br>
+            <br>
+
+            <p>Qual sua cor de embalagem preferida?</p>
+            <input type="color" name="cor-embalagem">
+            <br>
+            <br>
+
+            <p>Alguma observção sobre o pedido:</p>
+            <textarea name="observacao"></textarea>
+            <br>
+            <br>
+
+            <input type="submit">
+
+        </form>
+    </body>
+</html>

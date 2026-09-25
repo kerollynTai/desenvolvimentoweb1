@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa da prefeitura-transporte</title>
+</head>
+    <body>
+        <form method="post" action="" onsubmit="alert('Pesquisa finalizada!')">
+            
+            <h2>Bem-vindo ao sistema de pesquisa da prefeitura!</h2>
+            <p>Responda sos campos a seguir:</p>
+            <br>
+
+            <label>Insira seu nome completo: </label>
+            <br>
+            <input type="text" name="nome" placeholder="Digite seu nome aqui:" required>
+            <br>
+
+            <p>Informe sua data de nascimento:</p>
+            <input type="date" name="nascimento">
+            <br>
+            <br>
+
+            <p>Qual meio de transporte você utiliza?</p>
+            <input type="checkbox" name="veiculo1" value="bicicleta">
+            <label>Bicicleta</label>
+            <br>
+            <input type="checkbox" name="veiculo2" value="carro">
+            <label>Carro</label>
+            <br>
+            <input type="checkbox" name="veiculo3" value="moto">
+            <label>Moto</label>
+            <br>
+            <input type="checkbox" name="veiculo4" value="onibus">
+            <label>Ônibus</label>
+            <br>
+            <input type="checkbox" name="veiculo5" value="Aplicativo de transporte">
+            <label>Aplicativo de transporte</label>
+            <br>
+            <input type="checkbox" name="veiculo6" value="caminhada">
+            <label>Caminhada</label>
+            <br>
+            <br>
+
+            <p>Quantos veículos você possui?</p>
+            <input type="number" name="qndVeiculos" min="0" max="5">
+            <br>
+            <br>
+
+            <p>Qual seu nível de satisfação com o transporte público, de 0 a 10?</p>
+            <label>0</label>
+            <input type="range" min="0" max="10" step="1" step="2" step="3" step="4" step="5" 
+            step="6" step="7" step="8" step="9" step="10">
+            <label>10</label>
+            <br>
+            <br>
+
+            <p>Escreva um comentário sobre o trânsito da cidade:</p>
+            <textarea name="comentario" required></textarea >
+            <br>
+            <br>
+
+            <input type="button" value="Clique aqui" onclick="msg()">
+
+            <input type="submit">
+        </form>
+
+        <script>
+            function msg() { alert("Obrigada por participar da pesquisa!");}
+        </script>
+
+    </body>
+</html>

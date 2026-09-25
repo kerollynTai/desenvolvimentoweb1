@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola técnica - incrições</title>
+</head>
+    <body>
+        <form method="post" action="" onsubmit="alert('Inscrição realizada com sucesso!')">
+            
+            <h2>Bem-vindo ao sistema da nossa escola!</h2>
+            <p>Responda os campos a seguir para realizar a inscrição em seu curso:</p>
+
+            <label>Insira seu nome completo: </label>
+            <br>
+            <input type="text" name="nome" placeholder="Digite seu nome aqui:" required>
+            <br>
+            <label for="">Insira seu email:</label>
+            <br>
+            <input type="email" name="email" placeholder="Digite seu email aqui:" required>
+            <br>
+            <label for="">Insira sua senha:</label>
+            <br>
+            <input type="password" name="pwd" placeholder="Digite sua senha aqui:" required>
+            <br>
+            <br>
+            <p>Informe sua data de nascimento:</p>
+            <input type="date" name="nascimento">
+            <br>
+            <br>
+
+            <p>Qual o curso desejado?</p>
+            <input type="radio"
+                    id="DS"
+                    name="curso"
+                    value="Desenvolvimento de sistemas"
+                    required
+            >
+            <label for="DS">Desenvolvimento de sistemas</label>
+            <br>
+            <input type="radio"
+                    id="ADM"
+                    name="curso"
+                    value="Administração"
+                    required
+            >
+            <label for="ADM">Administração</label>
+            <br>
+            <input type="radio"
+                    id="RH"
+                    name="curso"
+                    value="Recursos-humanos"
+                    required
+            >
+            <label for="RH">Recursos humanos</label>
+            <br>
+            <input type="radio"
+                    id="CD"
+                    name="curso"
+                    value="Ciência-de-dados"
+                    required
+            >
+            <label for="CD">Ciência de dados</label>
+            <br>
+            <br>
+
+            <p>Qual o Turno desejado?</p>
+            <input type="radio" 
+                    id="M"
+                    name="turno"
+                    value="matutino"
+                    required
+            >
+            <label for="M">Matutino</label>
+            <br>
+            <input type="radio" 
+                    id="V"
+                    name="turno"
+                    value="matutino"
+                    required
+            >
+            <label for="V">Vespertino</label>
+            <br>
+            <input type="radio" 
+                    id="N"
+                    name="turno"
+                    value="matutino"
+                    required
+            >
+            <label for="N">Noturno</label>
+            <br>
+            <br>
+
+            <p>Qual seu nível de interesse no curso, de 0 a 10?</p>
+            <label>0</label>
+            <input type="range" min="0" max="10" step="1" step="2" step="3" step="4" step="5" 
+            step="6" step="7" step="8" step="9" step="10">
+            <label>10</label>
+            <br>
+            <br>
+
+            <P>Envie seu(s) documento(s):</P>
+            <input type="file" name="documento" multiple>
+            <br>
+            <br>
+
+            <p>Motivo de querer realizar o curso:</p>
+            <textarea name="motivo"></textarea>
+            <br>
+            <br>
+
+            <input type="submit" value="Enviar dados">
+
+        </form>
+    </body>
+</html>

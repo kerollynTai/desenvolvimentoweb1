@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Virtual</title>
+</head>
+    <body>
+        <form method="post" action="" onsubmit="alert('Cadastro realizado com sucesso!')">
+
+            <h2>Bem-vindo ao sistema da nossa loja!</h2>
+            <p>Insira seus dados para se cadastrar:</p>
+            <br>
+
+            <label>Insira seu nome completo: </label>
+            <br>
+            <input type="text" name="nome" placeholder="Digite seu nome aqui:" required>
+            <br>
+            <label for="">Insira seu email:</label>
+            <br>
+            <input type="email" name="email" placeholder="Digite seu email aqui:" required>
+            <br>
+            <label for="">Insira sua senha:</label>
+            <br>
+            <input type="password" name="pwd" placeholder="Digite sua senha  aqui:" required>
+            <br>
+            <br>
+
+            <p>Informe sua data de nascimento:</p>
+            <input type="date" name="nascimento">
+            <br>
+            <br>
+            
+            <p>Qual é o seu sexo?</p>
+            <input type="radio"
+                    id="feminino"
+                    name="sexo"
+                    value="feminino"       
+            >
+            <label for="feminino">Feminino</label>
+            <br>
+            <input type="radio"
+                    id="masculino"
+                    name="sexo"
+                    value="masculino"
+            >
+            <label for="masculino">Masculino</label>
+            <br>
+            <input type="radio"
+                    id="nao-informar"
+                    name="sexo"
+                    value="nao-informar"
+            >
+            <label for="nao-informar">Prefiro não informar</label>
+            <br>
+            <br>
+
+            <p>Qual sua cor preferida?</p>
+            <input type="color" name="cor">
+            <br>
+            <br>
+
+            <p>Comentário ou observação sobre o cadastro:</p>
+            <textarea name="Observacao-cad">Escreva aqui:</textarea>
+            <br>
+            <br>
+
+            <P>Envie uma foto para ser utilizada no seu perfil:</P>
+            <input type="file" name="foto">
+            <br>
+            <br>
+
+            <input type="submit">
+        </form>
+    </body>
+</html>

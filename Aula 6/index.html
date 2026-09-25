@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulários HTML</title>
+    </head>
+    <body>
+        <form method="get" action="" onsubmit="alert('Bem-vindo ao sitema!')">
+            
+            <h2>Bem-vindo ao sistema!</h2>
+            <p>Insira seus dados para logar</p>
+
+            <label>Insira seu nome de usuário: </label>
+            <br>
+            <input type="text" name="login" placeholder="Digite seu nome:" required>
+            <br>
+            <label for="">Insira sua senha:</label>
+            <br>
+            <input type="password" name="pwd" placeholder="Digite sua senha:" required>
+            <br>
+            <label for="">Insira seu email:</label>
+            <br>
+            <input type="email" name="email" placeholder="Digite seu email:" required>
+            <br>
+            <br>
+
+            <p>Qual seu meio de transporte?</p>
+            <input type="checkbox" name="veiculo1" value="bicicleta">
+            <label>Eu tenho uma bicicleta</label>
+            <br>
+            <input type="checkbox" name="veiculo2" value="carro">
+            <label>Eu tenho um carro</label>
+            <br>
+            <input type="checkbox" name="veiculo3" value="moto">
+            <label>Eu tenho uma moto</label>
+            <br>
+            <br>
+
+            <p>Qual é o seu sexo?</p>
+            <input type="radio"
+                    id="feminino"
+                    name="sexo"
+                    value="feminino"
+                    required
+            >
+            <label for="feminino">Feminino</label>
+            <br>
+            <input type="radio"
+                    id="masculino"
+                    name="sexo"
+                    value="masculino"
+                    required
+            >
+            <label for="masculino">Masculino</label>
+            <br>
+            <input type="radio"
+                    id="nao-informar"
+                    name="sexo"
+                    value="nao-informar"
+                    required
+            >
+            <label for="nao-informar">Prefiro não informar</label>
+            <br>
+            <br>
+            
+            <p>Data de nascimento:</p>
+            <input type="date" name="nascimento">
+            <br>
+            <br>
+
+            <input type="submit" value="Enviar dados">
+        </form>
+    </body>
+</html>

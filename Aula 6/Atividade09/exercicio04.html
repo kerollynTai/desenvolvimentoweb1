@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica - agendamento</title>
+</head>
+    <body>
+        <form method="post" action="" onsubmit="alert('Solicitação de agendamento enviada!')">
+            
+            <h2>Bem-vindo ao sistema da Clínica!</h2>
+            <p>Responda os campos a seguir para realizar seu agendamento:</p>
+            <br>
+
+            <label>Insira seu nome completo: </label>
+            <br>
+            <input type="text" name="nome" placeholder="Digite o nome aqui:" required>
+            <br>
+            <label for="">Insira seu email:</label>
+            <br>
+            <input type="email" name="email" placeholder="Digite o email aqui:">
+            <br>
+            <br>
+
+            <p>Informe sua data de nascimento:</p>
+            <input type="date" name="nascimento" required>
+            <br>
+            <br>
+
+            <p>Informe a data e horário desejados:</p>
+            <input type="datetime-local" name="data" required>
+            <br>
+            <br>
+
+            <p>Informe o tipo de atendimento:</p>
+            <input type="radio"
+                    id="consulta-rotina"
+                    name="tipo-atendimento"
+                    value="consulta-rotina"
+            >
+            <label for="consulta-rotina">Consulta de rotina</label>
+            <br>
+            <input type="radio"
+                    id="retorno"
+                    name="tipo-atendimento"
+                    value="retorno"
+            >
+            <label for="retorno">Retorno</label>
+            <br>
+            <input type="radio"
+                    id="exame"
+                    name="tipo-atendimento"
+                    value="exame"
+            >
+            <label for="exame">Exame</label>
+            <br>
+            <input type="radio"
+                    id="prioritario"
+                    name="tipo-atendimento"
+                    value="prioritario"
+            >
+            <label for="prioritario">Atendimento prioritário</label>
+            <br>
+            <br>
+
+            <p>Nível de dor ou desconforto, de 0 a 10?</p>
+            <label>0</label>
+            <input type="range" min="0" max="10" step="1" step="2" step="3" step="4" step="5" 
+            step="6" step="7" step="8" step="9" step="10">
+            <label>10</label>
+            <br>
+            <br>
+
+            <p>Descreva seus sintomas:</p>
+            <textarea name="comentario" required></textarea >
+
+
+            <P>Local para anexar exames:</P>
+            <input type="file" name="exames" multiple>
+            <br>
+            <br>
+
+            <input type="checkbox" name="uso-de-dados" value="Autorizado" required>
+            <label>Autorizo o uso dos meus dados para fins de agendamento.</label>
+            <br>
+            <br>
+
+            <input type="submit">
+            <br>
+        </form>
+    </body>
+</html>

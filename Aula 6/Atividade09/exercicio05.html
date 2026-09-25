@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante - Avaliação</title>
+</head>
+    <body>
+        <form method="post" action="" onsubmit="alert('Obrigada por avaliar nosso atendimento!')">
+
+            <h2>Bem-vindo(a) ao nosso sistema de avaliação</h2>
+            <p>Responda aos campos a baixo para sabermos a sua opinião sobre nosso atendimento:</p>
+            <br>
+
+            <label>Insira seu nome: </label>
+            <br>
+            <input type="text" name="nome" placeholder="Digite o nome aqui:">
+            <br>
+
+            <p>Informe a data e horário da sua visita:</p>
+            <input type="date" name="data" >
+            <input type="time" name="horario" >
+            <br>
+            <br>
+
+            <p>Informe a forma de atendimento:</p>
+            <input type="radio"
+                    id="presencial"
+                    name="forma-atendimento"
+                    value="presencial"
+            >
+            <label for="presencial">Presencial</label>
+            <br>
+            <input type="radio"
+                    id="retirada-local"
+                    name="forma-atendimento"
+                    value="retirada-local"
+            >
+            <label for="retirada-local">Retirada no local</label>
+            <br>
+            <input type="radio"
+                    id="entrega"
+                    name="forma-atendimento"
+                    value="entrega"
+            >
+            <label for="entrega">Entrega</label>
+            <br>
+            <br>
+
+            <p>Qual os itens consumidos na visita?</p>
+            <input type="checkbox" name="item1" value="bebidas">
+            <label>Bebidas</label>
+            <br>
+            <input type="checkbox" name="item2" value="lanches">
+            <label>Lanches</label>
+            <br>
+            <input type="checkbox" name="item3" value="pratos">
+            <label>Pratos</label>
+            <br>
+            <input type="checkbox" name="item4" value="sobremesas">
+            <label>Sobremesas</label>
+            <br>
+            <br>
+
+            <p>Quantas pessoas estavam na sua mesa:</p>
+            <input type="number" name="qndPessoas" min="1" max="20">
+            <br>
+            <br>
+
+            <p>Qual seu nível de satisfação, de 0 a 10?</p>
+            <label>0</label>
+            <input type="range" min="0" max="10" step="1" step="2" step="3" step="4" step="5" 
+            step="6" step="7" step="8" step="9" step="10">
+            <label>10</label>
+            <br>
+            <br>
+
+            <p>Cor que representa sua satisfação:</p>
+            <input type="color" name="cor-satisfacao">
+            <br>
+            <br>
+
+            <p>Insira um comentário sobre o atendimento:</p>
+            <textarea name="comentario"></textarea>
+            <br>
+            <br>
+
+            <input type="submit">
+            <br>
+            <br>
+
+        </form>
+    </body>
+</html>

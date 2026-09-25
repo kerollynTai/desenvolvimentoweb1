@@ -1,0 +1,112 @@
+body{
+    color: white;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 16px 10px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+a{
+    color: rgb(147, 147, 147);
+    text-decoration: none;
+}
+
+.ativo {
+    color: white
+}
+
+h1{
+    background-color: goldenrod;
+    color :black;
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 15px;
+    font-size: 25px;
+
+}
+
+h2{
+   text-align: justify;
+    max-width: 1425px;
+    margin: auto;
+    padding: 15px;
+    font-size: 21px;
+}
+
+h3{
+    font-size: 18px;
+}
+
+p{
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 16px;
+    max-width: 1425px;
+    margin: 0 auto;
+    padding: 15px;
+
+}
+
+hr{
+    max-width: 1425px;
+    border: 1px solid goldenrod;
+}
+
+img{
+    display: block;
+    max-width: 1425px;
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    opacity: 0.6;
+    
+}
+
+span{
+    color:goldenrod;
+    position: absolute;
+    text-align: left;
+    top: 25%;
+    left: 15%;
+    right: 40%;
+    font-size: 4vw;
+}
+
+
+footer{
+    background-color: rgb(14, 13, 13);
+    color:rgb(49, 49, 49);
+    max-width: 1425px;
+    text-align: justify;
+    margin: 0 auto;
+}
+
+.ul{
+    text-align: justify;
+    line-height: 1.5;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.card {
+    list-style-type: none;
+    gap: 10px;
+    border: 1px solid goldenrod;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.emoji{
+    font-size: 30px;
+}

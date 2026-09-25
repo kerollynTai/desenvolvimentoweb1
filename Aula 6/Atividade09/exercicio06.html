@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola - Formulário de atividades</title>
+</head>
+    <body>
+        <form method="post" action="" onsubmit="alert('Atividade envidade com sucesso!')">
+
+            <h2>Bem-vindo(a) ao sistema de envio de atividades da nossa escola!</h2>
+            <p>Responda os campos a seguir para enviar sua atividade:</p>
+            <br>
+            <p>Informe seu nome:</p>
+            <input type="text" name="nome" placeholder="Digite o nome aqui:" required>
+            <p>Informe seu email:</p>
+            <input type="email" name="email" placeholder="Digite o email aqui:" required>
+            <br>
+            <br>
+
+            <p>Qual a data de entrega da sua atividade?</p>
+            <input type="date" name="data-entrega">
+            <br>
+            <br>
+
+            <p>Informe a disciplina referente a atividade que será entregue:</p>
+            <input type="radio"
+                    id="banco-dados"
+                    value="banco-dados"
+                    name="disciplina"
+                    required
+            >
+            <label for="banco-dados">Banco de dados</label>
+            <br>
+            <input type="radio"
+                    id="programacao"
+                    value="programacao"
+                    name="disciplina"
+                    required
+            >
+            <label for="programacao">Programacao</label>
+            <br>
+            <input type="radio"
+                    id="desenvolvimento-web"
+                    value="desenvolvimento-web"
+                    name="disciplina"
+                    required
+            >
+            <label for="desenvolvimento-web">Desenvolvimento Web</label>
+            <br>
+            <input type="radio"
+                    id="analise-dados"
+                    value="analise-dados"
+                    name="disciplina"
+                    required
+            >
+            <label for="analise-dados">Analise de dados</label>
+            <br>
+            <br>
+
+            <p>Informe o tipo de atividade atividade que será entregue:</p>
+            <input type="radio"
+                    id="individual"
+                    value="individual"
+                    name="tipo-atividade"
+            >
+            <label for="individual">Trabalho individual</label>
+            <br>
+            <input type="radio"
+                    id="equipe"
+                    value="equipe"
+                    name="tipo-atividade"
+            >
+            <label for="equipe">Trabalho em equipe</label>
+            <br>
+            <input type="radio"
+                    id="recuperacao"
+                    value="recuperacao"
+                    name="tipo-atividade"
+            >
+            <label for="recuperacao">Recuperação</label>
+            <br>
+            <input type="radio"
+                    id="projeto"
+                    value="projeto"
+                    name="tipo-atividade"
+            >
+            <label for="projeto">Projeto</label>
+            <br>
+            <br>
+
+            <p>Adicione os arquivos da sua atividade:</p>
+            <input type="file" name="arquivos" multiple required>
+            <br>
+            <br>
+
+            <p>Qual o nível de dificuldade da atividade, de 0 a 10?</p>
+            <label>0</label>
+            <input type="range" min="0" max="10" step="1" step="2" step="3" step="4" step="5" 
+            step="6" step="7" step="8" step="9" step="10">
+            <label>10</label>
+            <br>
+            <br>
+
+            <p>Insira um comentário para o professor:</p>
+            <textarea name="comentario"></textarea>
+            <br>
+            <br>
+
+            <input type="checkbox" name="arquivo-autoral" value="confirmado" required>
+            <label>Confirmo que os arquivos enviados são de minha autoria.</label>
+            <br>
+            <br>
+
+            <input type="submit">
+            <br>
+            <br>
+
+        </form>        
+    </body>
+</html>
