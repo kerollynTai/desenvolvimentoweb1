@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Clínica veterinaria - cadastro</title>
+</head>
+    <body>
+        <form method="post" action="" onsubmit="alert('Cadastro realizado com sucesso!')">
+
+            <h2 class="titulo">Bem-vindo ao sistema da nossa clínica veterinária!</h2>
+            <p class="enunciado">Responda os campos a seguir para realizar o cadastro:</p>
+
+            <p>Informe o nome do tutor:</p>
+            <input type="text" name="nome" placeholder="Digite o nome aqui:" required>
+            <br>
+            <p>Informe o email do tutor:</p>
+            <input type="email" name="email" placeholder="Digite o email aqui:" >
+            <br>
+            <p>Informe o nome do animal:</p>
+            <input type="text" name="nome" placeholder="Digite o nome aqui:" required>
+            <br>
+            <p>Informe a data de nascimento do animal:</p>
+            <input type="date" name="data-nascimento-animal">
+            <br>
+            <br>
+
+            <p>Qual o tipo do animal:</p>
+            <input type="radio"
+                    id="cachorro"
+                    value="cachorro"
+                    name="tipo-animal"
+                    required
+            >
+            <label for="cachorro">Cachorro</label>
+            <br>
+            <input type="radio"
+                    id="gato"
+                    value="gato"
+                    name="tipo-animal"
+                    required
+            >
+            <label for="gato">Gato</label>
+            <br>
+            <input type="radio"
+                    id="ave"
+                    value="ave"
+                    name="tipo-animal"
+                    required
+            >
+            <label for="ave">Ave</label>
+            <br>
+            <input type="radio"
+                    id="coelho"
+                    value="coelho"
+                    name="tipo-animal"
+                    required
+            >
+            <label for="coelho">Coelho</label>
+            <br>
+            <input type="radio"
+                id="outro"
+                value="outro"
+                name="tipo-animal"
+                required
+            >
+            <label for="outro">Outro</label>
+            <br>
+            <br>
+
+            <p>Qual o sexo do animal:</p>
+            <input type="radio"
+                    id="macho"
+                    value="macho"
+                    name="sexo-animal"
+            >
+            <label for="macho">Macho</label>
+            <br>
+            <input type="radio"
+                    id="femea"
+                    value="femea"
+                    name="sexo-animal"
+            >
+            <label for="femea">Fêmea</label>
+            <br>
+            <input type="radio"
+                    id="nao-identificado"
+                    value="nao-identificado"
+                    name="sexo-animal"
+            >       
+            <label for="nao-identificado">Não identificado</label>
+            <br>
+            <br>
+
+            <p>Qual a quantidade de animais que o tutor possui?</p>
+            <input type="number" name="qnd-animais" min="1" max="10">
+            <br>
+            <br>
+
+            <p>Qual a cor predominante do animal:</p>
+            <input type="color" name:cor-animal>
+            <br>
+            <br>
+
+            <p>Anexe uma ou mais fotos do animal:</p>
+            <input type="file" multiple name="foto-animal">
+            <br>
+            <br>
+
+            <p>Descreva o comportamento e estado de saúde do animal:</p>
+            <textarea name="descricao"></textarea>
+            <br>
+            <br>
+
+            <input type="submit" value="Cadastrar">
+    </form>
+    </body>
+    <footer>    
+        <p class="rodape">Kerollyn@2026</p>
+    </footer>
+</html>

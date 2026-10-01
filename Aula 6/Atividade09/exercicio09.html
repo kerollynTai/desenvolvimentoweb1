@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Pesquisa - uso da tecnologia</title>
+</head>
+    <body>
+        <form method="post" action=""onsubmit="alert('Pesquisa realizada com sucesso!')">
+
+            <h2 class="titulo">Bem-vindo ao sistema da nossa empresa!</h2>
+            <p class="enunciado">Responda os campos a seguir para realizar a pesquisa:</p>
+
+            <p>Informe seu nome:</p>
+            <input type="text" name="nome" placeholder="Digite o nome aqui:" required>
+            <br>
+            <p>Informe seu email:</p>
+            <input type="email" name="email" placeholder="Digite o email aqui:" >
+            <br>
+
+            <p>Informe sua data de nascimento:</p>
+            <input type="date" name="data-nascimento">
+            <br>
+            <br>
+
+            <p>Quais equipamentos você utiliza?</p>
+            <input type="checkbox" name="equipamento1" value="computador">
+            <label>Computador</label> 
+            <br>
+            <input type="checkbox" name="equipamento2" value="notebook" >
+            <label >Notebook</label>
+            <br>
+            <input type="checkbox" name="equipamento3" value="tablet" >
+            <label >Tablet</label>
+            <br>
+            <input type="checkbox" name="equipamento4" value="smartphone" >
+            <label >Smartphone</label>
+            <br>
+            <input type="checkbox" name="equipamento5" value="videogame" >
+            <label >Videogame</label>
+            <br>
+            <br>
+
+            <p>Qual a principal finalidade do uso?</p>
+            <input type="radio"
+                    id="estudo"
+                    value="estudo"
+                    name="pincipal-finalidade"
+                    required
+            >
+            <label for="estudo">Estudo</label>
+            <br>
+            <input type="radio"
+                    id="trabalho"
+                    value="trabalho"
+                    name="pincipal-finalidade"
+                    required
+            >
+            <label for="trabalho">Trabalho</label>
+            <br>
+            <input type="radio"
+                    id="comunicacao"
+                    value="comunicacao"
+                    name="pincipal-finalidade"
+                    required
+            >
+            <label for="comunicacao">Comunicação</label>
+            <br>
+            <input type="radio"
+                    id="jogos"
+                    value="jogos"
+                    name="pincipal-finalidade"
+                    required
+            >
+            <label for="jogos">Jogos</label>
+            <br>
+             <input type="radio"
+                    id="entreterimento"
+                    value="entreterimento"
+                    name="pincipal-finalidade"
+                    required
+            >
+            <label for="entreterimento">Entreterimento</label>
+            <br>
+            <br>
+
+            <p>Qual a quantidade de horas que você utiliza seus equipamentos no total?</p>
+            <input type="number" name="hs-uso" min="1" max="24">
+            <br>
+            <br>
+
+            <p>Qual seu nível de conhecimento em tecnologia, de 0 a 10?</p>
+            <label>0</label>
+            <input type="range" name="nivel-conhecimento" min="0" max="10" step="1" step="2" step="3" step="4" step="5" 
+            step="6" step="7" step="8" step="9" step="10">
+            <label>10</label>
+            <br>
+            <br>
+
+            <p>Qual sua cor preferida para interface de sistemas?</p>
+            <input type="color" name="cor-fav-interface">
+            <br>
+            <br>
+
+            <p>Anexe uma imagem ou captura de tela do aplicativo que você utiliza frequentemente:</p>
+            <input type="file" name="imagem-app">
+            <br>
+            <br>
+
+            <p>Faça um comentário sobre como a tecnologia faz parte da sua rotina:</p>
+            <textarea name="comentario"></textarea>
+            <br>
+            <br>
+
+            <input type="submit" value="Enviar pesquisa">
+
+        </form>
+    </body>
+    <footer>    
+        <p class="rodape">Kerollyn@2026</p>
+    </footer>
+</html>

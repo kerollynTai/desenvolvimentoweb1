@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <title>Escola - Formulário de atividades</title>
 </head>
     <body>
         <form method="post" action="" onsubmit="alert('Atividade envidade com sucesso!')">
 
-            <h2>Bem-vindo(a) ao sistema de envio de atividades da nossa escola!</h2>
-            <p>Responda os campos a seguir para enviar sua atividade:</p>
-            <br>
+            <h2 class="titulo">Bem-vindo(a) ao sistema de envio de atividades da nossa escola!</h2>
+            <p class="enunciado">Responda os campos a seguir para enviar sua atividade:</p>
+
             <p>Informe seu nome:</p>
             <input type="text" name="nome" placeholder="Digite o nome aqui:" required>
             <p>Informe seu email:</p>
@@ -96,7 +97,7 @@
 
             <p>Qual o nível de dificuldade da atividade, de 0 a 10?</p>
             <label>0</label>
-            <input type="range" min="0" max="10" step="1" step="2" step="3" step="4" step="5" 
+            <input type="range" name="nivel-dificuldade" min="0" max="10" step="1" step="2" step="3" step="4" step="5" 
             step="6" step="7" step="8" step="9" step="10">
             <label>10</label>
             <br>
@@ -118,4 +119,7 @@
 
         </form>        
     </body>
+    <footer>    
+        <p class="rodape">Kerollyn@2026</p>
+    </footer>
 </html>

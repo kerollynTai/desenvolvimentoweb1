@@ -3,23 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <title>Escola técnica - incrições</title>
 </head>
     <body>
         <form method="post" action="" onsubmit="alert('Inscrição realizada com sucesso!')">
             
-            <h2>Bem-vindo ao sistema da nossa escola!</h2>
-            <p>Responda os campos a seguir para realizar a inscrição em seu curso:</p>
+            <h2 class="titulo">Bem-vindo ao sistema da nossa escola!</h2>
+            <p class="enunciado">Responda os campos a seguir para realizar a inscrição em seu curso:</p>
 
-            <label>Insira seu nome completo: </label>
+            <p>Insira seu nome completo:</p>
             <br>
             <input type="text" name="nome" placeholder="Digite seu nome aqui:" required>
             <br>
-            <label for="">Insira seu email:</label>
+            <p>Insira seu email:</p>
             <br>
             <input type="email" name="email" placeholder="Digite seu email aqui:" required>
             <br>
-            <label for="">Insira sua senha:</label>
+            <p>Insira sua senha:</p>
             <br>
             <input type="password" name="pwd" placeholder="Digite sua senha aqui:" required>
             <br>
@@ -93,7 +94,7 @@
 
             <p>Qual seu nível de interesse no curso, de 0 a 10?</p>
             <label>0</label>
-            <input type="range" min="0" max="10" step="1" step="2" step="3" step="4" step="5" 
+            <input type="range" name="nivel-interesse" min="0" max="10" step="1" step="2" step="3" step="4" step="5" 
             step="6" step="7" step="8" step="9" step="10">
             <label>10</label>
             <br>
@@ -113,4 +114,7 @@
 
         </form>
     </body>
+    <footer>    
+        <p class="rodape">Kerollyn@2026</p>
+    </footer>
 </html>

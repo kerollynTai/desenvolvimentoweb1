@@ -3,17 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <title>Pesquisa da prefeitura-transporte</title>
 </head>
     <body>
         <form method="post" action="" onsubmit="alert('Pesquisa finalizada!')">
             
-            <h2>Bem-vindo ao sistema de pesquisa da prefeitura!</h2>
-            <p>Responda sos campos a seguir:</p>
-            <br>
+            <h2 class="titulo">Bem-vindo ao sistema de pesquisa da prefeitura!</h2>
+            <p class="enunciado">Responda os campos a seguir:</p>
 
-            <label>Insira seu nome completo: </label>
-            <br>
+            <p>Insira seu nome completo:</p>
             <input type="text" name="nome" placeholder="Digite seu nome aqui:" required>
             <br>
 
@@ -50,7 +49,7 @@
 
             <p>Qual seu nível de satisfação com o transporte público, de 0 a 10?</p>
             <label>0</label>
-            <input type="range" min="0" max="10" step="1" step="2" step="3" step="4" step="5" 
+            <input type="range" name="satisfacao" min="0" max="10" step="1" step="2" step="3" step="4" step="5" 
             step="6" step="7" step="8" step="9" step="10">
             <label>10</label>
             <br>
@@ -71,4 +70,7 @@
         </script>
 
     </body>
+    <footer>    
+        <p class="rodape">Kerollyn@2026</p>
+    </footer>
 </html>

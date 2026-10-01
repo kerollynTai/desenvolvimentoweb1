@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <title>Restaurante - Avaliação</title>
 </head>
     <body>
         <form method="post" action="" onsubmit="alert('Obrigada por avaliar nosso atendimento!')">
 
-            <h2>Bem-vindo(a) ao nosso sistema de avaliação</h2>
-            <p>Responda aos campos a baixo para sabermos a sua opinião sobre nosso atendimento:</p>
-            <br>
-
-            <label>Insira seu nome: </label>
+            <h2 class="titulo">Bem-vindo(a) ao nosso sistema de avaliação</h2>
+            <p class="enunciado">Responda aos campos a baixo para sabermos a sua opinião sobre nosso atendimento:</p>
+            
+            <p>Insira seu nome:</p> 
             <br>
             <input type="text" name="nome" placeholder="Digite o nome aqui:">
             <br>
@@ -69,7 +69,7 @@
 
             <p>Qual seu nível de satisfação, de 0 a 10?</p>
             <label>0</label>
-            <input type="range" min="0" max="10" step="1" step="2" step="3" step="4" step="5" 
+            <input type="range" name="nivel-satisfacao" min="0" max="10" step="1" step="2" step="3" step="4" step="5" 
             step="6" step="7" step="8" step="9" step="10">
             <label>10</label>
             <br>
@@ -91,4 +91,7 @@
 
         </form>
     </body>
+    <footer>    
+        <p class="rodape">Kerollyn@2026</p>
+    </footer>
 </html>

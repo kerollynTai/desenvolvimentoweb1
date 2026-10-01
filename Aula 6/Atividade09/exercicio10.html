@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Incrição - evento</title>
+</head>
+    <body>
+        <form method="post" action="" onsubmit="alert('Inscrição no evento realizada com sucesso!')">
+
+            <h2 class="titulo">Bem-vindo ao sistema do evento!</h2>
+            <p class="enunciado">Responda os campos a seguir para realizar sua incrição:</p>
+
+            <p>Informe seu nome completo:</p>
+            <input type="text" name="nome" placeholder="Digite o nome aqui:" required>
+            <br>
+            <p>Informe seu email:</p>
+            <input type="email" name="email" placeholder="Digite o email aqui:" required>
+            <br>
+            <p>Informe sua senha:</p>
+            <input type="password" name="senha" placeholder="Digite sua senha aqui:" required >
+            <br>
+
+            <p>Informe sua data de nascimento:</p>
+            <input type="date" name="data-nascimento">
+
+            <p>Qual o tipo de participação?</p>
+            <input type="radio"
+                id="visitante"
+                value="visitante"
+                name="tipo-participacao"
+                required
+            >
+            <label for="visitante">Visitante</label>
+            <br>
+            <input type="radio"
+                id="estudante"
+                value="estudante"
+                name="tipo-participacao"
+                required
+            >
+            <label for="estudante">Estudante</label>
+            <br>
+            <input type="radio"
+                id="professor"
+                value="professor"
+                name="tipo-participacao"
+                required
+            >
+            <label for="professor">Professor</label>
+            <br>
+            <input type="radio"
+                id="palestrante"
+                value="palestrante"
+                name="tipo-participacao"
+                required
+            >
+            <label for="palestrante">Palestrante</label>
+            <br>
+            <input type="radio"
+                id="expositor"
+                value="expositor"
+                name="tipo-participacao"
+                required
+            >
+            <label for="expositor">Expositor</label>
+            <br>
+            <br>
+
+            <p>Quais áreas que você possui interesse?</p>
+            <input type="checkbox" name="area1" value="programacao">
+            <label>Programacao</label> 
+            <br>
+            <input type="checkbox" name="area2" value="robotica" >
+            <label >Robótica</label>
+            <br>
+            <input type="checkbox" name="area3" value="Inteligencia-artificial" >
+            <label >Inteligência artificial</label>
+            <br>
+            <input type="checkbox" name="area4" value="banco-dados" >
+            <label >Banco de dados</label>
+            <br>
+            <input type="checkbox" name="area5" value="seguranca-digital" >
+            <label >Segurança digital</label>
+            <br>
+            <input type="checkbox" name="area5" value="desenvolvimento-web" >
+            <label >Desenvolvimento web</label>
+            <br>
+            <br>
+
+            <p>Qual a quantidade de acompanhantes?</p>
+            <input type="number" name="qdt-acompanhantes" min="0" max="5">
+            <br>
+            <br>
+
+            <p>Qual seu nível de expectativa, de 0 a 10?</p>
+            <label>0</label>
+            <input type="range"name="nivel-expectativa" min="0" max="10" step="1" step="2" step="3" step="4" step="5" 
+            step="6" step="7" step="8" step="9" step="10">
+            <label>10</label>
+            <br>
+            <br>
+
+            <p>Anexe seu documento de identificação:</p>
+            <input type="file" name="documento-identificacao" multiple>
+            <br>
+            <br>
+
+            <p>Algum comentário ou necessidade especial?</p>
+            <textarea name="comentario"></textarea>
+            <br>
+            <br>
+
+            <input type="checkbox" name="regras-evento" value="concordo" required>
+            <label>Li e concordo com as regras do evento.</label>
+            <br>
+            <br>
+
+            <input type="submit" value="Enviar inscrição">
+            <br>
+
+        </form>
+    </body>
+    <footer>    
+        <p class="rodape">Kerollyn@2026</p>
+    </footer>
+</html>

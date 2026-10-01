@@ -3,32 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <title>Loja Virtual</title>
 </head>
     <body>
         <form method="post" action="" onsubmit="alert('Cadastro realizado com sucesso!')">
 
-            <h2>Bem-vindo ao sistema da nossa loja!</h2>
-            <p>Insira seus dados para se cadastrar:</p>
-            <br>
+            <h2 class="titulo">Bem-vindo ao sistema da nossa loja!</h2>
+            <p class="enunciado">Insira seus dados para se cadastrar:</p>
 
-            <label>Insira seu nome completo: </label>
-            <br>
+            <p>Insira seu nome completo: </p>
             <input type="text" name="nome" placeholder="Digite seu nome aqui:" required>
             <br>
-            <label for="">Insira seu email:</label>
-            <br>
+            <p>Insira seu email:</p>
             <input type="email" name="email" placeholder="Digite seu email aqui:" required>
             <br>
-            <label for="">Insira sua senha:</label>
-            <br>
+            <p>Insira sua senha:</p>
             <input type="password" name="pwd" placeholder="Digite sua senha  aqui:" required>
             <br>
             <br>
 
-            <p>Informe sua data de nascimento:</p>
+            <p >Informe sua data de nascimento:</p>
             <input type="date" name="nascimento">
-            <br>
             <br>
             
             <p>Qual é o seu sexo?</p>
@@ -73,4 +69,8 @@
             <input type="submit">
         </form>
     </body>
+    <footer>    
+        <p class="rodape">Kerollyn@2026</p>
+    </footer>
+
 </html>

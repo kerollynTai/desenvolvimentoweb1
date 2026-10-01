@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <title>Lanchonete - pedido</title>
 </head>
     <body>
         <form method="post" action="" onsubmit="alert('Pedido registrado com sucesso!')">
 
-            <h2>Bem-vindo(a) ao sistema da nossa lanchonete!</h2>
-            <p>Responda os campos a seguir para enviar seu pedido:</p>
-            <br>
+            <h2 class="titulo">Bem-vindo(a) ao sistema da nossa lanchonete!</h2>
+            <p class="enunciado">Responda os campos a seguir para enviar seu pedido:</p>
+        
+
             <p>Informe seu nome:</p>
             <input type="text" name="nome" placeholder="Digite o nome aqui:" required>
             <p>Informe seu email:</p>
@@ -50,24 +52,68 @@
             <input type="number" nome="qndHamburguer" min="1" max="15" >
             <label>Hambúrguer</label> 
             <br>
+            <input type="checkbox" name="restricao1" value="hamburguer" >
+            <label >Sem cebola</label>
+            <br>
+            <input type="checkbox" name="restricao2" value="hamburguer" >
+            <label >Sem tomate</label>
+            <br>
+            <input type="checkbox" name="restricao3" value="hamburguer" >
+            <label >Sem queijo</label>
+            <br>
+            <input type="checkbox" name="restricao4" value="hamburguer" >
+            <label >Molho separado</label>
+            <br>
+            <br>
+
             <input type="checkbox" name="item2" value="cachorro-quente" >
             <input type="number" nome="qndCachorro-quente" min="1" max="15" >
             <label>Cachorro-quente</label>
             <br>
+            <input type="checkbox" name="restricao1" value="hamburguer" >
+            <label >Sem cebola</label>
+            <br>
+            <input type="checkbox" name="restricao2" value="hamburguer" >
+            <label >Sem tomate</label>
+            <br>
+            <input type="checkbox" name="restricao3" value="hamburguer" >
+            <label >Sem queijo</label>
+            <br>
+            <input type="checkbox" name="restricao4" value="hamburguer" >
+            <label >Molho separado</label>
+            <br>
+            <br>
+
             <input type="checkbox" name="item3" value="pizza" >
             <input type="number" nome="qndPizza" min="1" max="15" >
             <label>Pizza</label>
             <br>
+            <input type="checkbox" name="restricao1" value="hamburguer" >
+            <label >Sem cebola</label>
+            <br>
+            <input type="checkbox" name="restricao2" value="hamburguer" >
+            <label >Sem tomate</label>
+            <br>
+            <input type="checkbox" name="restricao3" value="hamburguer" >
+            <label >Sem queijo</label>
+            <br>
+            <input type="checkbox" name="restricao4" value="hamburguer" >
+            <label >Molho separado</label>
+            <br>
+            <br>
+
             <input type="checkbox" name="item4" value="batata-frita" >
-            <input type="number" nome="qndBatata-frita" min="1" max="15" >
+            <input type="number" name="qndBatata-frita" min="1" max="15" >
             <label>Batata frita</label>
             <br>
+            <br>
             <input type="checkbox" name="item4" value="refrigerante" >
-            <input type="number" nome="qndRefrigerante" min="1" max="15" >
+            <input type="number" name="qndRefrigerante" min="1" max="15" >
             <label>Refrigerante</label>
             <br>
+            <br>
             <input type="checkbox" name="item4" value="suco" >
-            <input type="number" nome="qndSuco" min="1" max="15" >
+            <input type="number" name="qndSuco" min="1" max="15" >
             <label>Suco</label>
             <br>
             <br>
@@ -91,4 +137,7 @@
 
         </form>
     </body>
+    <footer>    
+        <p class="rodape">Kerollyn@2026</p>
+    </footer>
 </html>
